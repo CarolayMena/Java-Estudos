@@ -71,8 +71,11 @@ import java.util.Scanner;
 Scanner scanner = new Scanner (System.in); --> O "System.in" método de entrada no sistema (existem varios) , neste caso usamos classe System
 
 # Alterando arquivos no git hub
+```
 1-clicar no objeto caneta e começar editar
-1-para salvar ir no fim da pagina e clicar no botão commit changes
+```
+2-para salvar ir no fim da pagina e clicar no botão commit changes
+```
 3-ir no git bash e fazer comando pull da branch correspondente
 git pull origin aula4
 
