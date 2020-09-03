@@ -21,8 +21,8 @@ code review --etapa do ciclo de desenvolvimento que pessoas aprovam o código fo
 jenkis--continuos integration, olha se o código canditato a entrar vai quebrar o que está funcionando
 se quebrar ele não entra, garantindo que vai subir coisas que funciona. 
 
-## rasch do commit
-quando se faz commit o gitbash cria rasch de commit (89d0098f--> esse número é a rasch curta
+## hash do commit
+quando se faz commit o gitbash cria hash de commit (89d0098f--> esse número é a hasc curta
 
 ## commit através da rasch
 é possível fazer o checkout pela rasch, por exemplo quando precisamos voltar no tempo
@@ -52,7 +52,7 @@ git commit --amend && git push origin aula3 --force
 		System.out.println(c.equals(d)); //true --> aqui está fazendo comparação de igualdade
 		
 		==            usar para comparar referência de memória
-		(x.equals(y)) usar para comparar o conteúdo do objeto
+		(x.equals(y)) usar para comparar o conteúdo do objeto 
 		
 
 
@@ -62,7 +62,7 @@ git commit --amend && git push origin aula3 --force
 		
 		
 
-public static void main(String[] qualquerNome) -->no lugar do args pode ser qualquerNome porem convem colocar args
+public static void main(String[] qualquerNome) -->no lugar do args pode ser qualquer Nome porem convem colocar args
 
 
 		Integer a = 127;
@@ -84,8 +84,57 @@ public static void main(String[] qualquerNome) -->no lugar do args pode ser qual
 												--> .equals usado para comparar tipo String e Interger
 		System.out.println(g==h); //true 
 
+
+
 Integer é a classe
 O Interger foi feito para o primitivo int, uma alternativa para o primitivo int wrapper -->para um primitivo sempre existe um wrapper que tem varios métodos
 
-int é um primitivo 
+(https://www.alura.com.br/artigos/diferenca-entre-int-e-integer-em-java)
+int é um primitivo que nada mais é do que um tipo que não representa uma classe. 
 primitivo não tem métodos
+o padrão de int é 0
+o int nao é é um objeto. Não é a instância de uma classe, logo não possui métodos
+
+Em tanto o Integer tem métodos --atributo possa ser adicionado a uma coleção, você pode ter um List por exemplo
+O Interger tem métodos estáticos, que são os mais usados das classes wrappers --mais usado método valueOf(), que transforma o parâmetro para o wrapper que chamou este método.
+transformar um int em Integer
+int tipoPrimitivo = 0;
+Integer tipoPrimitivoTransformadoEmWrapper = Integer.valueOf(tipoPrimitivo);
+
+Então, como Integer é uma classe não abstrata, podemos instânciá-la:
+
+int tipoPrimitivo = 0;
+Integer tipoPrimitivoTransformadoEmWrapper = new Integer(tipoPrimitivo);
+
+O autoboxing é um recurso que automaticamente converte tipos primitivos em seu wrapper equivalente. Por exemplo, vamos supor que eu queira transformar o atributo 
+idade que está com o tipo int para uma nova variável do tipo Integer.
+Com o autoboxing eu poderia fazer dessa forma:
+
+'''
+Integer idadeWrapper = idade;
+'''
+
+Por baixo dos panos” o compilador compila para o seguinte código:
+'''
+Integer idadeWrapper = Integer.valueOf(idade);
+'''
+
+E o unboxing é o inverso do autoboxing, ou seja, ele pega um wrapper e o transforma em seu tipo primitivo. Assim:
+
+'''
+int idadePrimitivo = idadeWrapper;
+'''
+E por baixo dos panos, temos o seguinte:
+'''
+int idadePrimitivo = idadeWrapper.intValue();
+'''
+
+#Todos os tipos não primitivos são, por padrão, nulos caso não seja atribuído nenhum valor a eles.
+
+Em java existe Wrapper-- classe que representa um tipo primitivo
+exemplo o Wrapper de int é o Integer
+
+Mas o que eu ganho usando esse Wrapper? 
+a maior vantagem é conseguir atribuir nulo
+cuidado para não atribuir valores nulos a rodo, pois seu código fica muito propenso a tomar NullPointerException.
+
