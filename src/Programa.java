@@ -8,7 +8,7 @@ public class Programa {
 //		int input = scanner.nextInt();
 		int contador =0;
 			while (contador <4){
-				contador++;
+//				contador++;
 //				System.out.println("valor do contador" + contador);
 
 //				if(contador ==3) {
@@ -19,6 +19,7 @@ public class Programa {
 				continue;
 				}
 			 System.out.println("valor do contador" + contador);
+			 contador++;
 
 			}
 	}
