@@ -9,7 +9,8 @@ public class Programa {
 		List<String>  nomes = new ArrayList<>();
 		nomes.add("Janett");
 	        nomes.add("Andre");
-		nomes.remove("Janett");
-		System.out.println(nomes);
+		for(String nome : nomes ) {
+			System.out.println(nome);
+		}
 	}
 }
