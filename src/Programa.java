@@ -11,7 +11,6 @@ import java.util.Scanner;
                 System.out.println("Digite nome do cargo");
 		String nomeCargo = scan.next();
 
-//		char sexo;
 		System.out.println("Digite sexo M ou F");
 //		sexo = (char)System.in.read(); 
 		char sexo;
@@ -40,6 +39,7 @@ import java.util.Scanner;
 
 
 		// switch case funciona da mesma forma que if else acima
+		//testa o valor de uma variável, e dependendo do valor contido nessa variável, permite executar uma entre múltiplas escolhas de ações
 		//condiçao que pode ser usada switch case --> String,int, char, Enum,byte
 		//exemplo 1
 		switch (diaSemana) {
