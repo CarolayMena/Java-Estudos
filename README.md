@@ -4,14 +4,34 @@
 
 ## Trabalhando com laços de repetição
 
-(https://www.youtube.com/watch?v=2fawKjR8d4c)
+
+# FOR (pendente) 
+```
+
+```
 
 # WHILE 
+
+https://www.youtube.com/watch?v=2fawKjR8d4c
+contador inicia valendo zero 
+contador < 0
+
+contador recebe zero
+int contador =0;
+
+verificando uma condição
+contador < 4
+
+quando finaliza a primeira verificação incrementa o contador-->looping
+contador +1
+
+
+
 ```
 int contador = 0;
 while (contador<4) {          // faz teste lógico antes 
 System.out.println("Contador"); 
-contador++ ;                    // repete as vezes que for necessário
+contador++ ;                    // repete as fezes com for necessário
 }
 
 RESULTADO 
@@ -94,7 +114,16 @@ System.out.println("Contador" + contador);
 }
 ```
 
-  
+(https://www.youtube.com/watch?v=9_12LPVMJYc)
 
+while --> enquanto a condição for verdadeira --> executa o looping --> expressão entre chaves
 
-			
+while (i < max)   { // a primeira vez o valor de i começa com 1 e verifica se i <10 
+System.out.println("Valor de i" + i); // imprime msg na tela + valor de i (primeira vez i vale 1
+i++ ;  // incrementa o valor de i --> aqui i passar a valer 2 e volta para while e pergunta de i<10
+								-- ou seja, se 2 <10	
+
+}
+
+System.out.println(i); // na última vez que faz verificação do while i vale 10 porque quando i tinha valor de 9, i incrementou mais 1, passando a i a valer 10-->i volta para while e pergunta i<max -->10 < 10
+                          então finaliza looping e imprime o valor de i.
