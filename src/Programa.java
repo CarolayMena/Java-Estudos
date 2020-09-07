@@ -11,7 +11,7 @@ public class Programa {
 		pessoas.add(new Pessoa("Jannet", 19));
 	        pessoas.add(new Pessoa("Andre", 34));
 
-		for( int i=0; i<2; i++ ) {
+		for( int i=0; i<pessoas.size(); i++ ) {
 			System.out.println( pessoas.get(i).nome + " " + pessoas.get(i).idade );
 		}
 
