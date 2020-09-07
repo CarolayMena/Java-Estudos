@@ -1,10 +1,15 @@
-import java.util.Scanner;
+import java.util.List;
+import java.util.ArrayList;
+
+
 
 public class Programa {
 
 	public static void main ( String[] args ) {
-		Scanner scanner = new Scanner(System.in);
-		String input = scanner.next();
-		System.out.println(input);
+		List<String>  nomes = new ArrayList<>();
+		nomes.add("Janett");
+	        nomes.add("Andre");
+		nomes.remove("Janett");
+		System.out.println(nomes);
 	}
 }
