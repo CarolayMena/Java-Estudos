@@ -1,4 +1,11 @@
 public class Pessoa {
-	String nome;
 
+	Pessoa(){
+	}
+
+	Pessoa(String nome){
+		this.nome = nome;
+	}
+
+	public String nome;
 }
