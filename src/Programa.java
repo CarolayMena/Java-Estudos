@@ -1,18 +1,14 @@
-import java.util.List;
-import java.util.ArrayList;
-
-
 
 public class Programa {
 
 	public static void main ( String[] args ) {
-		List<Pessoa> pessoas = new ArrayList<>();
+		Pessoa[] pessoas = new Pessoa[2];
 
-		pessoas.add(new Pessoa("Jannet", 19));
-	        pessoas.add(new Pessoa("Andre", 34));
+		pessoas[0]=new Pessoa("Jannet", 19);
+	        pessoas[1]=new Pessoa("Andre", 34);
 
-		for( int i=0; i<pessoas.size(); i++ ) {
-			System.out.println( pessoas.get(i).nome + " " + pessoas.get(i).idade );
+		for( int i=0; i<pessoas.length; i++ ) {
+			System.out.println( pessoas[i].nome + " " + pessoas[i].idade );
 		}
 
 	}
