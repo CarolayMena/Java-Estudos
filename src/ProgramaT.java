@@ -9,10 +9,9 @@ public class ProgramaT {
 		lista.add(new Funcionario("Janett", 36));
 		lista.add(fun);
 		lista.add(fun2);
-		for (int i=0; i<lista.size() ; i++ ) {
-			 System.out.println(lista.get(i).nome + " " + lista.get(i).idade);
+		for ( Funcionario f : lista)	{
+			System.out.println(f);
 		}
-
 	}
 }
 
