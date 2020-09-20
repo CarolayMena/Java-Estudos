@@ -52,6 +52,11 @@ _Integer.class_
 _Obs: Primitivos não tem tratamento são impressos 'cru' exatamente com o valor que eles possuem_
 
 
+## A anotação @Override serve para indicar para o compilador que estamos querendo reescrever um método da classe pai na classe filha.
+Contudo, ela não é obrigatória, podemos reescrever um método sem esta anotação. Porém, as boas práticas de programação recomendam que usemos o @Override,
+pois assim O IDE (eclipse) não deixa que escrevamos o nome do método errado por engano.
+
+
 
 ## Diferenca de List e List<> e também ArayList ArrayList<>  ####
 (https://www.devmedia.com.br/java-collections-set-list-e-iterator/29637)
