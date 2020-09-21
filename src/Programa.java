@@ -9,7 +9,9 @@ public class Programa {
 		Scanner scanner = new Scanner(System.in);
 		System.out.println("Digite o tamanho da lista");
 		tamanho = scanner.nextInt();
+
 		Funcionario func = new Funcionario();
+
 		Map lista = new HashMap<>();
 		for (int i=0; i<tamanho; i++) { 
 			lista.put(i,func);
