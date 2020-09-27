@@ -1,12 +1,18 @@
 # Java-Estudo
 
-## Aula 
+## Aula 11
 
-## TÃ­tulo
+## Título
 
-```
 
-```  
+Quando trabalhamos com arrays usamos o 
+
+`array.lengh`
+
+Quando trabalhamos com ArrayList usamos o 
+
+
+`lista.size();`  
 
 
 			
